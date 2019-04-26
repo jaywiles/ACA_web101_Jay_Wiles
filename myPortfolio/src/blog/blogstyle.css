@@ -6,10 +6,10 @@ body {
 header {
     text-align:center;
     font-size: 24px;
-    color:blue;
+    color:navy;
 }
 
-nav {
+.buttons {
     text-align:right;
     font-size:20px;
 }
@@ -29,7 +29,7 @@ div {
 #money {
     width:300px;
     height:100%;
-
+    border:5px black;
 }
 
 footer {
