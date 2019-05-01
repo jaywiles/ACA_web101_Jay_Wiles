@@ -2,6 +2,84 @@ body {
     background-color:lightgray;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
+    max-width:1000px;
+}
+
+#textheader {
+    height:auto;
+    border: 3px solid black;
+    float:right;
+    background-color:#b7d6b3;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav > a {
+    margin-right: 40px;
+}
+
+#masterdiv {
+    width: 70%;
+    float:left;
+}
+
+.content {
+    border: 3px solid black;
+    width:100%;
+    display:inline-block;
+    margin-bottom: 12px;
+}
+
+aside {
+    border: 3px solid black;
+    float: right;
+    display: inline-block;
+    width: 27%;
+    padding: 5px;
+    align-content: right;
+    margin-bottom: 12px;
+}
+
+br {
+    font-size: 
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    margin-top: -180px; /*negative value of footer height*/
+    height: 30px;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+    background-color:lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
 #profilepic {
@@ -34,8 +112,8 @@ body {
 }
 
 .links {
+    text-align: center;
     float:center;
-    vertical-align: middle;
     padding-left: 192px;
 }
 
@@ -43,8 +121,8 @@ h2 {
     text-decoration: underline;
 }
 
-main {/* used as container*/
-    /*border: 1px solid red; -- use this if need a red border about body for testing*/
+main {/* used as container
+    /*border: 1px solid red; -- use this if need a red border about body for testing
     height: 100%;
     width: 100%;
     display: inline-block;
@@ -63,6 +141,16 @@ main {/* used as container*/
     right: 8px;
     float: right;
     margin-bottom: 12px;
+}
+
+#contact {
+    display:inline-block;
+    float:left;
+}
+
+#links {
+    display:inline-block;
+    float:right;
 }
 
 footer {
