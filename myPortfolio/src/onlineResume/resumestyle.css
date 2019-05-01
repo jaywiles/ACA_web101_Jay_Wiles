@@ -1,6 +1,8 @@
 body {
     background-color:lightgray;
     font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 #profilepic {
@@ -32,27 +34,37 @@ body {
     font-size:14px;
 }
 
+a {
+    text-align: center;
+    padding-left:192px;
+}
+
 h2 {
     text-decoration: underline;
 }
 
 main {/* used as container*/
-    border: 1px solid black;
+    /*border: 1px solid red; -- use this if need a red border about body for testing*/
+    height: 100%;
+    width: 100%;
     display: inline-block;
-    height: auto;
-    width: 47%;
 }
 
 .content-left {
     border: 3px solid black;
+    width: 49%;
     left: 8px;
+    float: left;
 }
 
 .content-right {
     border: 3px solid black;
+    width: 49%;
     right: 8px;
+    float: right;
+    margin-bottom: 12px;
 }
 
 footer {
-    text-align:center;
+    text-align: center;
 }
