@@ -101,3 +101,20 @@ body {
     letter-spacing: 16px;
     font-style: italic;
   }
+
+  @media (max-width:1200px) and (min-width:200px) {
+    body {
+      width: auto;
+    }
+    a {
+      float: none !important;
+      width: auto;
+    }
+  }
+
+  @media print {
+    body {
+      background:white;
+      color:black;
+    }
+  }
