@@ -10,6 +10,9 @@ body {
     border: 3px solid black;
     float:right;
     background-color:#b7d6b3;
+    margin-left:50px;
+    margin-right:50px;
+    display:inline-block;
 }
 
 h1 {
@@ -23,7 +26,7 @@ nav {
 }
 
 nav > a {
-    margin-right: 40px;
+    margin-right: 15%;
 }
 
 #masterdiv {
@@ -49,7 +52,10 @@ aside {
 }
 
 br {
-    font-size: 
+    display:block;
+    margin-bottom:2px;
+    font-size:2px;
+    line-height:2px;
 }
 
 footer {
