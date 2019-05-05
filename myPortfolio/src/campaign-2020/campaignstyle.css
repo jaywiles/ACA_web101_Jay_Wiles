@@ -7,7 +7,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 4fr 1fr 10fr 1fr 4fr;
+    grid-template-columns: 4fr 1fr 20fr 1fr 4fr;
 }
 
 #headertext {
@@ -16,16 +16,35 @@ header {
     background-color: lightgreen;
 }
 
+.socialnav > img {
+    height: 60px;
+    width: auto;
+}
+
 .mainnav {
-    text-align: center;
+    box-align: center;
     display: inline-block;
-    margin-right: 12%;
+    margin-right: 4.7%;
+    border-radius: 20px;
+    border-color: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.mainnav:hover {
+    color: yellow;
+}
+
+main > nav > button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    width: 15%;
 }
 
 #mainvideo {
     display: block;
-    align-content: center;
-    
 }
 
 #disclaimer {
@@ -34,4 +53,11 @@ header {
 
 footer {
     text-align: center;
+}
+
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
 }
