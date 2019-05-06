@@ -5,13 +5,18 @@ body {
     max-width:1000px;
 }
 
+#picheader {
+    height: 200px;
+    width: 24%;
+    float: left;
+}
+
 #textheader {
     height:auto;
     border: 3px solid black;
     float:right;
     background-color:#b7d6b3;
-    margin-left:50px;
-    margin-right:50px;
+    width: 75%;
     display:inline-block;
 }
 
