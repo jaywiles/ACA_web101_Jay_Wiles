@@ -31,7 +31,8 @@ nav {
 }
 
 nav > a {
-    margin-right: 12%;
+    margin-right: 15%;
+    text-decoration: none;
 }
 
 #masterdiv {
