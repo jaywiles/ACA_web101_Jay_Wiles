@@ -1,0 +1,296 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+	font-family: Avenir;
+}
+
+body {
+	font-size: 16px;
+	padding: 16px;
+	margin: 0;
+}
+
+.container {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-areas:
+        "todo  greeting         date-time"
+        "todo  calendar         calendar"
+        "todo  other-element-1  calculator";
+    max-width: 960px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+}
+
+.todo {
+    grid-area: todo;
+    background-color: lightblue;
+    border-right: 1px solid black;
+}
+
+.greeting {
+    grid-area: greeting;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.other-element-1 {
+    grid-area: other-element-1;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.date-time {
+    grid-area: date-time;
+    border-bottom: 1px solid black;
+}
+
+.calendar {
+    grid-area: calendar;
+}
+
+.calendar-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "month-year month-year month-year month-year month-year month-year month-year"
+        "day-1 day-2 day-3 day-4 day-5 day-6 day-7"
+        "date-1 date-2 date-3 date-4 date-5 date-6 date-7"
+        "date-8 date-9 date-10 date-11 date-12 date-13 date-14"
+        "date-15 date-16 date-17 date-18 date-19 date-20 date-21"
+        "date-22 date-23 date-24 date-25 date-26 date-27 date-28"
+        "date-29 date-30 date-31 date-32 date-33 date-34 date-35";
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+}
+
+.month-year {
+    grid-area: month-year;
+    margin: auto;
+}
+
+.day-1 {
+    grid-area: day-1;
+    margin: auto;
+}
+
+.day-2 {
+    grid-area: day-2;
+    margin: auto;
+}
+
+.day-3 {
+    grid-area: day-3;
+    margin: auto;
+}
+
+.day-4 {
+    grid-area: day-4;
+    margin: auto;
+}
+
+.day-5 {
+    grid-area: day-5;
+    margin: auto;
+}
+
+.day-6 {
+    grid-area: day-6;
+    margin: auto;
+}
+
+.day-7 {
+    grid-area: day-7;
+    margin: auto;
+}
+
+.date-1 {
+    grid-area: date-1;
+    margin: auto;
+}
+
+.date-2 {
+    grid-area: date-2;
+    margin: auto;
+}
+
+.date-3 {
+    grid-area: date-3;
+    margin: auto;
+}
+
+.date-4 {
+    grid-area: date-4;
+    margin: auto;
+}
+
+.date-5 {
+    grid-area: date-5;
+    margin: auto;
+}
+
+.date-6 {
+    grid-area: date-6;
+    margin: auto;
+}
+
+.date-7 {
+    grid-area: date-7;
+    margin: auto;
+}
+
+.date-8 {
+    grid-area: date-8;
+    margin: auto;
+}
+
+.date-9 {
+    grid-area: date-9;
+    margin: auto;
+}
+
+.date-10 {
+    grid-area: date-10;
+    margin: auto;
+}
+
+.date-11 {
+    grid-area: date-11;
+    margin: auto;
+}
+
+.date-12 {
+    grid-area: date-12;
+    margin: auto;
+}
+
+.date-13 {
+    grid-area: date-13;
+    margin: auto;
+}
+
+.date-14 {
+    grid-area: date-14;
+    margin: auto;
+}
+
+.date-15 {
+    grid-area: date-15;
+    margin: auto;
+}
+
+.date-16 {
+    grid-area: date-16;
+    margin: auto;
+}
+
+.date-17 {
+    grid-area: date-17;
+    margin: auto;
+}
+
+.date-18 {
+    grid-area: date-18;
+    margin: auto;
+}
+
+.date-19 {
+    grid-area: date-19;
+    margin: auto;
+}
+
+.date-20 {
+    grid-area: date-20;
+    margin: auto;
+}
+
+.date-21 {
+    grid-area: date-21;
+    margin: auto;
+}
+
+.date-22 {
+    grid-area: date-22;
+    margin: auto;
+}
+
+.date-23 {
+    grid-area: date-23;
+    margin: auto;
+}
+
+.date-24 {
+    grid-area: date-24;
+    margin: auto;
+}
+
+.date-25 {
+    grid-area: date-25;
+    margin: auto;
+}
+
+.date-26 {
+    grid-area: date-26;
+    margin: auto;
+}
+
+.date-27 {
+    grid-area: date-27;
+    margin: auto;
+}
+
+.date-28 {
+    grid-area: date-28;
+    margin: auto;
+}
+
+.date-29 {
+    grid-area: date-29;
+    margin: auto;
+}
+
+.date-30 {
+    grid-area: date-30;
+    margin: auto;
+}
+
+.date-31 {
+    grid-area: date-31;
+    margin: auto;
+}
+
+.date-32 {
+    grid-area: date-32;
+    margin: auto;
+}
+
+.date-33 {
+    grid-area: date-33;
+    margin: auto;
+}
+
+.date-34 {
+    grid-area: date-34;
+    margin: auto;
+}
+
+.date-35 {
+    grid-area: date-35;
+    margin: auto;
+}
+
+.calculator {
+    grid-area: calculator;
+    border-top: 1px solid black;
+}
