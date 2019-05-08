@@ -17,7 +17,7 @@ body {
     height: 95vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas:
         "todo  greeting         date-time"
         "todo  calendar         calendar"
@@ -35,10 +35,28 @@ body {
     border-right: 1px solid black;
 }
 
+.todo > h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.todo-1 {
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+/* to make checkboxes separate from text slightly */
+div > input {
+    margin-right: 3%;
+}
+
 .greeting {
     grid-area: greeting;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 64px;
 }
 
 .other-element-1 {
@@ -52,18 +70,51 @@ body {
     border-bottom: 1px solid black;
 }
 
+.date-time-container {
+    grid-area: date-time;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "day  time"
+        "date time";
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1%;
+    border: 1px solid red;
+}
+
+.day {
+    grid-area: day;
+    margin: auto;
+}
+
+.date {
+    grid-area: date;
+    margin: auto;
+}
+
+.time {
+    grid-area: time;
+    margin: auto;
+    font-size: 24px;
+}
+
 .calendar {
     grid-area: calendar;
 }
 
 .calendar-container {
+    grid-area: calendar;
     height: auto;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-areas:
         "month-year month-year month-year month-year month-year month-year month-year"
-        "day-1 day-2 day-3 day-4 day-5 day-6 day-7"
+        "sunday monday tuesday wednesday thursday friday saturday"
         "date-1 date-2 date-3 date-4 date-5 date-6 date-7"
         "date-8 date-9 date-10 date-11 date-12 date-13 date-14"
         "date-15 date-16 date-17 date-18 date-19 date-20 date-21"
@@ -72,47 +123,60 @@ body {
     max-width: auto;
     margin-left: auto;
     margin-right: auto;
+    margin: 1%;
     border: 1px solid red;
 }
 
 .month-year {
     grid-area: month-year;
     margin: auto;
+    font-weight: bold;
 }
 
-.day-1 {
-    grid-area: day-1;
-    margin: auto;
+.month-year > h1 {
+    font-size: 28px;
 }
 
-.day-2 {
-    grid-area: day-2;
+.sunday {
+    grid-area: sunday;
     margin: auto;
+    text-decoration: underline;
 }
 
-.day-3 {
-    grid-area: day-3;
+.monday {
+    grid-area: monday;
     margin: auto;
+    text-decoration: underline;
 }
 
-.day-4 {
-    grid-area: day-4;
+.tuesday {
+    grid-area: tuesday;
     margin: auto;
+    text-decoration: underline;
 }
 
-.day-5 {
-    grid-area: day-5;
+.wednesday {
+    grid-area: wednesday;
     margin: auto;
+    text-decoration: underline;
 }
 
-.day-6 {
-    grid-area: day-6;
+.thursday {
+    grid-area: thursday;
     margin: auto;
+    text-decoration: underline;
 }
 
-.day-7 {
-    grid-area: day-7;
+.friday {
+    grid-area: friday;
     margin: auto;
+    text-decoration: underline;
+}
+
+.saturday {
+    grid-area: saturday;
+    margin: auto;
+    text-decoration: underline;
 }
 
 .date-1 {
@@ -293,4 +357,161 @@ body {
 .calculator {
     grid-area: calculator;
     border-top: 1px solid black;
+}
+
+.calculator-container {
+    grid-area: calculator;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "calc-result calc-result calc-result calc-result"
+        "calc-1-1 calc-1-2 calc-1-3 calc-1-4"
+        "calc-2-1 calc-2-2 calc-2-3 calc-2-4"
+        "calc-3-1 calc-3-2 calc-3-3 calc-3-4"
+        "calc-4-1 calc-4-2 calc-4-3 calc-4-4"
+        "calc-5-1 calc-5-1 calc-5-3 calc-4-4";
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1%;
+    border: 1px solid red;
+}
+
+.calc-result {
+    grid-area: calc-result;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.calc-1-1 {
+    grid-area: calc-1-1;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-1-2 {
+    grid-area: calc-1-2;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-1-3 {
+    grid-area: calc-1-3;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-1-4 {
+    grid-area: calc-1-4;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-2-1 {
+    grid-area: calc-2-1;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-2-2 {
+    grid-area: calc-2-2;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-2-3 {
+    grid-area: calc-2-3;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-2-4 {
+    grid-area: calc-2-4;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-3-1 {
+    grid-area: calc-3-1;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-3-2 {
+    grid-area: calc-3-2;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-3-3 {
+    grid-area: calc-3-3;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-3-4 {
+    grid-area: calc-3-4;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-4-1 {
+    grid-area: calc-4-1;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-4-2 {
+    grid-area: calc-4-2;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-4-3 {
+    grid-area: calc-4-3;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-4-4 {
+    grid-area: calc-4-4;
+    margin: auto;
+    width: 75%;
+    height: 80%;
+}
+
+.calc-5-1 {
+    grid-area: calc-5-1;
+    margin: auto;
+    width: 75%;
+}
+
+.calc-5-3 {
+    grid-area: calc-5-3;
+    margin: auto;
+    width: 75%;
+}
+
+@media (max-width: 575px) {
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            "greeting"
+            "date-time"
+            "todo"
+            "calendar"
+            "calculator"
+            "other-element-1";
+        max-width: 575px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid black;
+    }
 }
