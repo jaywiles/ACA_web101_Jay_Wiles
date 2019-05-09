@@ -118,6 +118,9 @@ div > input {
 .date-time {
     grid-area: date-time;
     border-bottom: 1px solid black;
+    background-image: url(./clock-background.jpg);
+    background-size: 100%;
+    opacity: 50%;
 }
 
 .date-time-container {
@@ -133,6 +136,7 @@ div > input {
     margin-left: auto;
     margin-right: auto;
     margin: 1%;
+    color: white;
     border: 1px solid red;
 }
 
@@ -185,6 +189,17 @@ div > input {
 
 .month-year > h1 {
     font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.date-template {
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* i really want to figure out how to put a box around each date here */
 }
 
 .sunday {
@@ -252,6 +267,9 @@ div > input {
 .date-5 {
     grid-area: date-5;
     margin: auto;
+    background-image: url(./flag-background.jpg);
+    background-size: 100%;
+    color: white;
 }
 
 .date-6 {
@@ -429,11 +447,16 @@ div > input {
     border: 1px solid red;
 }
 
-.calc-result {
+.calc-result {    
     grid-area: calc-result;
     margin: auto;
     margin-top: 3%;
     margin-bottom: 3%;
+    background: lightblue;
+}
+
+.calc-button:hover {
+    background-color: lightgreen;
 }
 
 .calc-1-1 {
