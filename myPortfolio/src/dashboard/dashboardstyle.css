@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    height: 95vh;
+    height: 92vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
@@ -118,7 +118,7 @@ div > input {
 .date-time {
     grid-area: date-time;
     border-bottom: 1px solid black;
-    background-image: url(./clock-background.jpg);
+    background-image: url(./clock-background.png);
     background-size: 100%;
     opacity: 50%;
 }
@@ -126,18 +126,10 @@ div > input {
 .date-time-container {
     grid-area: date-time;
     height: auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "day  time"
-        "date time";
-    max-width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
     color: white;
-    border: 1px solid red;
 }
 
 .day {
@@ -148,6 +140,7 @@ div > input {
 .date {
     grid-area: date;
     margin: auto;
+    margin-bottom: 6px;
 }
 
 .time {
@@ -199,7 +192,6 @@ div > input {
     padding-right: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    /* i really want to figure out how to put a box around each date here */
 }
 
 .sunday {
@@ -269,6 +261,7 @@ div > input {
     margin: auto;
     background-image: url(./flag-background.jpg);
     background-size: 100%;
+    color: white;
 }
 
 .date-6 {
