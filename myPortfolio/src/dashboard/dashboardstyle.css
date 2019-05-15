@@ -17,7 +17,7 @@ body {
     height: 92vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
     grid-template-areas:
         "todo  greeting         date-time"
         "todo  calendar         calendar"
@@ -104,7 +104,6 @@ div > input {
     grid-area: greeting;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
-    text-align: center;
     font-weight: bold;
     font-size: 64px;
 }
@@ -130,6 +129,8 @@ div > input {
     flex-direction: column;
     width: 65%;
     color: white;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
 .day {
@@ -565,7 +566,7 @@ div > input {
         height: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto;
         grid-template-areas:
             "greeting"
             "date-time"
