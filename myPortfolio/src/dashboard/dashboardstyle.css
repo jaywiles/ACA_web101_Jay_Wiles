@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+body {
+    background-color: slategray;
+}
+
 html {
 	font-size: 18px;
 	font-family: Avenir;
@@ -102,6 +106,8 @@ div > input {
 
 .greeting {
     grid-area: greeting;
+    background-color: black;
+    color: white;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
     text-align: center;
@@ -130,6 +136,7 @@ div > input {
     flex-direction: column;
     width: 65%;
     color: white;
+    margin: 6% 0;
 }
 
 .day {
@@ -168,10 +175,8 @@ div > input {
         "date-22 date-23 date-24 date-25 date-26 date-27 date-28"
         "date-29 date-30 date-31 date-32 date-33 date-34 date-35";
     max-width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 1%;
-    border: 1px solid red;
+    margin: 0;
+    background-image: url(./calendar-background.jpeg);
 }
 
 .month-year {
@@ -182,58 +187,62 @@ div > input {
 
 .month-year > h1 {
     font-size: 28px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 5px 5px;
+    background-color: gray;
+    background: rgba(0,0,0,0.7);
+    color: white;
+}
+
+.cal-template {
+    padding: 5px 5px;
+    background-color: gray;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    margin: 1%;
 }
 
 .date-template {
-    border: 1px solid black;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 15px;
+    background-color: gray;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    margin: 1%;
 }
 
 .sunday {
     grid-area: sunday;
     margin: auto;
-    text-decoration: underline;
 }
 
 .monday {
     grid-area: monday;
     margin: auto;
-    text-decoration: underline;
 }
 
 .tuesday {
     grid-area: tuesday;
     margin: auto;
-    text-decoration: underline;
 }
 
 .wednesday {
     grid-area: wednesday;
     margin: auto;
-    text-decoration: underline;
 }
 
 .thursday {
     grid-area: thursday;
     margin: auto;
-    text-decoration: underline;
 }
 
 .friday {
     grid-area: friday;
     margin: auto;
-    text-decoration: underline;
 }
 
 .saturday {
     grid-area: saturday;
     margin: auto;
-    text-decoration: underline;
 }
 
 .date-1 {
