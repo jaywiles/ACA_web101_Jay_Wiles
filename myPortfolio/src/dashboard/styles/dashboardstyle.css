@@ -123,7 +123,7 @@ div > input {
 .date-time {
     grid-area: date-time;
     border-bottom: 1px solid black;
-    background-image: url(./images/clock-background.png);
+    background-image: url(../images/clock-background.png);
     background-size: 100%;
     opacity: 50%;
 }
@@ -175,7 +175,7 @@ div > input {
         "date-29 date-30 date-31 date-32 date-33 date-34 date-35";
     max-width: auto;
     margin: 0;
-    background-image: url(./images/calendar-background.jpeg);
+    background-image: url(../images/calendar-background.jpeg);
 }
 
 .month-year {
@@ -267,7 +267,7 @@ div > input {
 .date-5 {
     grid-area: date-5;
     margin: auto;
-    background-image: url(./images/flag-background.jpg);
+    background-image: url(../images/flag-background.jpg);
     background-size: 100%;
 }
 
