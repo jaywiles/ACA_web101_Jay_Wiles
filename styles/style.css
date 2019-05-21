@@ -3,10 +3,9 @@ body {
   color:white;
   background-image: url(../images/black\ scale\ background.jpg);
   background-repeat: no-repeat;
-  background-position: center; background-size: 1200px;
+  background-position: center; background-size: 100%;
   background-color:lightgray;
-  text-align: center, width: 1200px; margin: 0 auto;
-  width: 1200px;
+  text-align: center; margin: 0 auto;
   height: 100vh;
   }
   
