@@ -1,124 +1,124 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color:white;
-    background-image: url(../images/black\ scale\ background.jpg);
-    background-repeat: no-repeat;
-    background-position: center; background-size: 1200px;
-    background-color:lightgray;
-    text-align:center, width: 1200px; margin: 0 auto;
-    width: 1200px;
-    height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  background-image: url(../images/black\ scale\ background.jpg);
+  background-repeat: no-repeat;
+  background-position: center; background-size: 1200px;
+  background-color:lightgray;
+  text-align: center, width: 1200px; margin: 0 auto;
+  width: 1200px;
+  height: 100vh;
   }
   
-  .logo {
-    width: 150px;
-    height: 150px;
-    margin: 3% 10%;
-  }
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: 3% 10%;
+}
   
-  header {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    width: 100%;
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
   }
 
-  main {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-  }
+main {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
   
-  nav > a {
-    margin: 8% 2% 3%;
-    height: 10%;
-    width: 15%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    background: transparent;
-    padding: 10px; 
-    text-align: center;
-    border: 2px solid white;
-  }
+nav > a {
+  margin: 8% 2% 3%;
+  height: 10%;
+  width: 15%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+  background: transparent;
+  padding: 10px; 
+  text-align: center;
+  border: 2px solid white;
+}
   
-  .has-border {
-    border-radius: 25px;
-    border: 2px solid #0795C3;
-    background: none;
-    padding: 20px;
-  }
+.has-border {
+  border-radius: 25px;
+  border: 2px solid #0795C3;
+  background: none;
+  padding: 20px;
+}
   
-  nav {
-    display: flex;
-    /*justify-content: flex-end;*/
-    width: 100%;
-    padding-right: 2%;
-  }
+nav {
+  display: flex;
+  /*justify-content: flex-end;*/
+  width: 100%;
+  padding-right: 2%;
+}
   
-  #profile-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 15% auto;
-    grid-column: 2/3;
-  }
+#profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 15% auto;
+  grid-column: 2/3;
+}
   
-  h1 {
-    color:white;
-    grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 2px solid #1940A9;
-  }
+h1 {
+  color:white;
+  grid-column: 2/3;
+  margin: 3% auto;
+  border-bottom: 2px solid #1940A9;
+}
   
-  h2 {
-    grid-column: 2/3;
-    margin: 3% auto;
-    font-style: italic;
-  }
+h2 {
+  grid-column: 2/3;
+  margin: 3% auto;
+  font-style: italic;
+}
   
-  .small-text {
-    grid-column: 2/3;
-    color: white;
-    font-size: 10px;
-    margin: 3% auto;
-  }
+.small-text {
+  grid-column: 2/3;
+  color: white;
+  font-size: 10px;
+  margin: 3% auto;
+}
   
-  button {
-    grid-column: 2/3;
-    margin: 3% auto;
-    width: 70%;
-    height: 15%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    background: transparent;
-    padding: 20px;
-    padding-bottom: 5%;
-    text-align: center;
-    color: white;
-    letter-spacing: 16px;
-    font-style: italic;
-  }
+button {
+  grid-column: 2/3;
+  margin: 3% auto;
+  width: 70%;
+  height: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+  background: transparent;
+  padding: 20px;
+  padding-bottom: 5%;
+  text-align: center;
+  color: white;
+  letter-spacing: 16px;
+  font-style: italic;
+}
 
-  footer {
-    text-align: center;
-  }
+footer {
+  text-align: center;
+}
 
-  @media (max-width:1200px) and (min-width:200px) {
-    body {
-      width: auto;
-    }
-    a {
-      float: none !important;
-      width: auto;
-    }
+@media (max-width:1200px) and (min-width:200px) {
+  body {
+    width: auto;
   }
+  a {
+    float: none !important;
+    width: auto;
+  }
+}
 
-  @media print {
-    body {
-      background:white;
-      color:black;
-    }
+@media print {
+  body {
+    background:white;
+    color:black;
   }
+}
