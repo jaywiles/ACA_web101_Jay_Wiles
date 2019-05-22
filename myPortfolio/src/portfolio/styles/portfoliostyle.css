@@ -102,16 +102,23 @@ footer {
 
     .header-nav-container {
         height: auto;
+        margin: 0;
     }
     
     .header-nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 2px;
+        margin: 0;
     }
     
     .header-nav-links {
         border: 5px solid red;
+        padding: 20px;
+        margin: 5px;
+    }
+
+    .video-frame {
+        width: 100%;
     }
 }
