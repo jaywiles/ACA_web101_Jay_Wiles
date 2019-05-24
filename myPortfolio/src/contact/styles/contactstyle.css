@@ -1,0 +1,24 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+
+
+.social-container {
+    display: flex;
+}
+
+.social-pic {
+    width: 100px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: navy;
+    color: white;
+}
