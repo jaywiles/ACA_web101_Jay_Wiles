@@ -16,24 +16,37 @@
     <main>
         <div class="main-container">
             <div class="social-container">
-                <div class="social-link"><a href="http://www.facebook.com/"><img class="social-pic" src="../../../images/facebook-logo-1024px.png"></a></div>
-                <div class="social-link"><a href="http://www.twitter.com/"><img class="social-pic" src="../../../images/twitter-logo.png"></a></div>
-                <div class="social-link"><a href="http://www.instagram.com/"><img class="social-pic" src="../../../images/instagram-logo.png"></a></div>
-                <div class="social-link"><a href="http://www.linkedin.com/"><img class="social-pic" src="../../../images/linkedin-logo-128px.png"></a></div>
-                <div class="social-link"><a href="http://www.github.com/"><img class="social-pic" src="../../../images/github-logo-120px.png"></a></div>
+                <div class="social-header">Connect with me on social media!</div>
+                    <div class="social-element-container">    
+                        <div class="social-link"><a href="http://www.facebook.com/"><img class="social-pic" src="../../../images/facebook-logo-1024px.png">Facebook</a></div>
+                        <div class="social-link"><a href="http://www.twitter.com/"><img class="social-pic" src="../../../images/twitter-logo.png">Twitter</a></div>
+                        <div class="social-link"><a href="http://www.instagram.com/"><img class="social-pic" src="../../../images/instagram-logo.png">Instagram</a></div>
+                        <div class="social-link"><a href="http://www.linkedin.com/"><img class="social-pic" src="../../../images/linkedin-logo-128px.png">LinkedIn</a></div>
+                        <div class="social-link"><a href="http://www.github.com/"><img class="social-pic" src="../../../images/github-logo-120px.png">GitHub</a></div>
+                </div>
             </div>
-            <!-- <div class="map-container">
+            <div class="map-container">
                     <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Austin%2C%20TX&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div>
-            </div> -->
-            <div class="form-container">
-                <form>
-                    <input type="text" name="name" id="name" value="Name" required>
-                    <input type="email" name="email" id="email" value="Email" required>
-                    
-
-
-
-
+            </div>
+            <div class="form-div">
+                <div class="form-header">Send me a message</div>
+                <form class="form-container">
+                    <div class="form-element-parent1">Name <div class="required-field">*</div>
+                        <input class="form-element form-element1" type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-element-parent2">Email <div class="required-field">*</div>
+                        <input class="form-element form-element2" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-element-parent3">Phone 
+                        <input class="form-element form-element-3" type="phone" name="phone" id="phone">
+                    </div>
+                    <div class="form-element-parent4">Message 
+                        <textarea class="form-element form-element4" rows="6" cols="50"></textarea>
+                    </div>
+                    <div class="form-element-buttons">
+                        <input class="form-element" type="submit" value="Submit">
+                        <input class="form-element" type="reset" value="Clear">
+                    </div>
                 </form>
             </div>
         </div>
