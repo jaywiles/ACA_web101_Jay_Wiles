@@ -7,7 +7,33 @@ main {
     margin-top: 10px;
 }
 
-.top-container {
+.header-container {
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.header-top {
+    font-size: 2em;
+}
+
+.header-middle {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.header-middle > a {
+    border: 2px solid black;
+    padding: 15px 30px;
+    background-color: gray;
+}
+
+.header-bottom {
+    font-size: 1.5em;
+}
+
+/* .top-container {
     display: flex;
     flex-direction: row;
     font-size: 2.5em;
@@ -17,7 +43,7 @@ main {
 
 .top-desc {
     padding: 0 10%;
-}
+} */
 
 .container {
     margin: 10px 0;
@@ -30,7 +56,6 @@ main {
 }
 
 .circle {
-    border: 5px solid red;
     border-radius: 200px;
     height: 400px;
     width: 400px;
@@ -38,13 +63,13 @@ main {
 }
 
 .left-circle {
-    margin-left: 200px;
+    margin-left: 15%;
     margin-right: auto;
 }
 
 .right-circle {
     margin-left: auto;
-    margin-right: 200px;
+    margin-right: 15%;
 }
 
 .circle-content {
@@ -53,15 +78,12 @@ main {
     font-size: 2em;
 }
 
-
-
 .story-header {
     text-align: center;
     padding: 20px;
     font-size: 2em;
     background-color: blue;
 }
-
 
 .story-section {
     display: flex;
@@ -83,4 +105,29 @@ footer {
     padding-top: 40px;
     padding-bottom: 10px;
     background: navy;
+}
+
+@media (max-width: 900px) {
+    .circle {
+        border-radius: 50%;
+        height: 40%;
+        width: 40%;
+    }
+
+    .left-circle {
+        margin-left: 2%;
+        margin-right: auto;
+        white-space: nowrap;
+    }
+
+    .right-circle {
+        margin-left: auto;
+        margin-right: 2%;
+    }
+
+    .circle-content {
+        font-size: 1em;
+        margin: 0;
+        padding: 70px 0;
+    }
 }
