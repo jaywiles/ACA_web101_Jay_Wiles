@@ -1,0 +1,134 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: lightyellow;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "social form"
+        "map    form";
+}
+
+.social-container {
+    grid-area: social;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 3px solid red;
+}
+
+.social-header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.social-pic {
+    width: 50px;
+    padding: 5px;
+    margin-left: 200px;
+}
+
+.map-container {
+    grid-area: map;
+    margin-top: 10px;
+}
+
+.form-div {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.form-header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    grid-area: form;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "name name-box"
+        "email email-box"
+        "phone phone-box"
+        "message message-box"
+        "buttons buttons";
+}
+
+.form-element {
+    margin: 5px;
+}
+
+.form-element-parent1 {
+    grid-area: name;
+}
+
+.form-element-parent2 {
+    grid-area: email;
+}
+
+.form-element-parent3 {
+    grid-area: phone;
+}
+
+.form-element-parent4 {
+    grid-area: message;
+}
+
+.form-element1 {
+    grid-area: name-box;
+}
+
+.form-element2 {
+    grid-area: email-box;
+}
+
+.form-element3 {
+    grid-area: phone-box;
+}
+
+.form-element4 {
+    grid-area: message-box;
+}
+
+.form-element-buttons {
+    grid-area: buttons;
+}
+
+.required-field {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: navy;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-container {
+        order: 1;
+    }
+
+    .form-container {
+        order: 2;
+    }
+
+    .map-container {
+        order: 3;
+    }
+}
