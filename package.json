@@ -1,0 +1,22 @@
+{
+  "name": "aca_web101_jay_wiles",
+  "version": "1.0.0",
+  "description": "This is my ACA portfolio!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaywiles/ACA_web101_Jay_Wiles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaywiles/ACA_web101_Jay_Wiles/issues"
+  },
+  "homepage": "https://github.com/jaywiles/ACA_web101_Jay_Wiles#readme",
+  "dependencies": {
+    "animate.css": "^3.7.0"
+  }
+}
