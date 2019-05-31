@@ -1,10 +1,83 @@
 body {
     font-family: 'Muli', sans-serif;
+    padding-top: 100px;
+    background-color: black;
 }
 
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+} 
 
+.box {
+    height: 50px;
+    width: 50px;
+    margin: 3px 0;
+}
 
+div:hover div:nth-child(odd) {
+    transform: scale(2) rotate(360deg) translate(50px);
+    transition-duration: 2s;
+}
 
+div:hover div:nth-child(even) {
+    transform: scale(0.5) rotate(-360deg) translate(-50px);
+    transition-duration: 2s;
+}
+
+div {
+    transition: ease-in-out 2s;
+}
+
+.box1 {
+    border: 2px solid red;
+}
+
+.box2 {
+    border: 2px solid orange;
+}
+
+.box3 {
+    border: 2px solid yellow;
+}
+
+.box4 {
+    border: 2px solid green;
+}
+
+.box5 {
+    border: 2px solid darkblue;
+}
+
+.box6 {
+    border: 2px solid lightblue;
+}
+
+.box7 {
+    border: 2px solid purple;
+}
+
+.box8 {
+    border: 2px solid pink;
+}
+
+.box9 {
+    border: 2px solid lightgray;
+}
+
+.box10 {
+    border: 2px solid darkgray;
+}
+
+.box11 {
+    border: 2px solid brown;
+}
+
+.box12 {
+    border: 2px solid white;
+}
 
 footer {
     text-align: center;
