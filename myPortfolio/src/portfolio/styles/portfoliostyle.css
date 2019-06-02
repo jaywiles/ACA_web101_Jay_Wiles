@@ -67,6 +67,11 @@ main > section {
     font-size: 32px;
 }
 
+.project-box:hover {
+    background-color: lightgray;
+    color: red;
+}
+
 footer {
     text-align: center;
     padding-top: 50px;
