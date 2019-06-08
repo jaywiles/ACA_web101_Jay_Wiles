@@ -12,16 +12,26 @@
         <div id="towers-container">
             <div id="towers">
                 <span id="towers-header">
+                    <div id="button1">1</div>
+                    <div id="button2">2</div>
+                    <div id="button3">3</div>
+                    <div id="button4">4</div>
+                    <div id="button5">5</div>
+                    <!-- <div id="button-answer">You have _ moves to solve Towers of Hanoi</div> -->
+
                     
+                    <!-- <input id="towers-number" type='text' value='5'>
+                    <button id="towers-run" onclick="run()">Calculate number of moves</button>
+                    <div id="towers-answer">You have _ moves to solve Towers of Hanoi</div> -->
                 </span>
                 <span id="towers-main">
-                    <div id="towers-left" class="tower-template">
+                    <div id="tower1" class="tower-template">
 
                     </div>
-                    <div id="towers-center" class="tower-template">
+                    <div id="tower2" class="tower-template">
 
                     </div>
-                    <div id="towers-right" class="tower-template">
+                    <div id="tower3" class="tower-template">
 
                     </div>
                 </span>
@@ -29,7 +39,8 @@
             <button onclick="resetGame()">Reset</button>
 
         </div>
-        <script src="./ticTacToe.js"></script>
+        <script src="./towers.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </main>
     <footer>&copy; 2019 | Jay Wiles</footer>
 </body>
