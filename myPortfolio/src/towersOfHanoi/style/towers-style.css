@@ -3,7 +3,15 @@ body {
     width: 100%;
 }
 
+#reset-button {
+    /* would like to figure out how to center-align button */
+}
 
+#towers-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 #towers-container {
     height: 500px;
@@ -17,14 +25,21 @@ body {
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
-    
 }
 
 .tower-template {
     height: 300px;
     width: 250px;
-    border: 1px solid red;
+    border: 1px solid black;
     margin: 100px auto;
+}
+
+.rod {
+    background: black;
+    height: 200px;
+    width: 10px;
+    margin-top: 100px;
+    margin-left: 120px;
 }
 
 footer {

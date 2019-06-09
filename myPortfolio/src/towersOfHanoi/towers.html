@@ -12,31 +12,35 @@
         <div id="towers-container">
             <div id="towers">
                 <span id="towers-header">
-                    <div id="button1">1</div>
-                    <div id="button2">2</div>
-                    <div id="button3">3</div>
-                    <div id="button4">4</div>
-                    <div id="button5">5</div>
-                    <!-- <div id="button-answer">You have _ moves to solve Towers of Hanoi</div> -->
+                    <div>Number of pieces: </div>
+                    <button id="button1" class="number-button">1</button>
+                    <button id="button2" class="number-button">2</button>
+                    <button id="button3" class="number-button">3</button>
+                    <button id="button4" class="number-button">4</button>
+                    <button id="button5" class="number-button">5</button>
+                    &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; 
+                    <!-- line above is extra spaces being forced to be added -->
+                    <div id="button-answer">You have _ moves to solve Towers of Hanoi</div>
 
                     
                     <!-- <input id="towers-number" type='text' value='5'>
                     <button id="towers-run" onclick="run()">Calculate number of moves</button>
                     <div id="towers-answer">You have _ moves to solve Towers of Hanoi</div> -->
                 </span>
+                <button id="reset-button" onclick="resetGame()">Reset</button>
                 <span id="towers-main">
                     <div id="tower1" class="tower-template">
-
+                        <canvas id="rod1" class="rod"></canvas>
                     </div>
                     <div id="tower2" class="tower-template">
-
+                        <canvas id="rod2" class="rod"></canvas>
                     </div>
                     <div id="tower3" class="tower-template">
-
+                        <canvas id="rod3" class="rod"></canvas>
                     </div>
                 </span>
             </div>
-            <button onclick="resetGame()">Reset</button>
+            
 
         </div>
         <script src="./towers.js"></script>
