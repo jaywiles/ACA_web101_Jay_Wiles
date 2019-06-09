@@ -3,21 +3,58 @@ body {
     width: 100%;
 }
 
-#reset-button {
-    /* would like to figure out how to center-align button */
+[tower] {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    background-color: lightblue;
+    margin: 25px;
 }
 
-#towers-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+[color-block] {
+    width: 25px;
+    float: left;
+}
+
+[color-block="25"] {
+    height: 25px;
+    background-color: red;
+}
+
+[color-block="50"] {
+    height: 50px;
+    background-color: yellow;
+}
+
+[color-block="75"] {
+    height: 75px;
+    background-color: green;
+}
+
+[color-block="100"] {
+    height: 100px;
+    background-color: blue;
+}
+
+
+
+
+/* #reset-button {
+    would like to figure out how to center-align button
 }
 
 #towers-container {
     height: 500px;
     width: 800px;
     border: 1px solid black;
-    background-color: lightblue;
+    /* background-color: lightblue;
+}
+
+#towers-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #towers-main {
@@ -40,8 +77,12 @@ body {
     width: 10px;
     margin-top: 100px;
     margin-left: 120px;
-}
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    align-self: flex-end; */
+/* }
 
 footer {
     text-align: center;
-}
+} */
