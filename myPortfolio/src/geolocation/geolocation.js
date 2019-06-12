@@ -1,9 +1,9 @@
 // console.log("test")
 
 function findMe() {
-    const displayLoc = document.querySelector(#find-location);
-    const status = document.querySelector(#status);
-    const mapLink = document.querySelector(#map-link);
+    const displayLoc = document.querySelector('#find-location');
+    const status = document.querySelector('#status');
+    const mapLink = document.querySelector('#map-link');
     // below - need to establish these elements currently have nothing in them until we put them in a function later
     mapLink.href = '';
     status.textContent = '';
@@ -11,8 +11,10 @@ function findMe() {
     function showPosition(position) {
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
-        const latlon = lat + ", " + lon;
-        displayLoc.textContent = `Latitude: " + ${lat} + ", Longitude: " + ${lon}`;
+        const latlon = `${lat},${lon}`
+        // const latlon = lat + ", " + lon; ----- easier way to do this above
+        status.textContent = `Latitude: ${lat}, Longitude: ${lon}`;
+        // above are template literals inside text
     }
 
     function error() {
@@ -31,4 +33,4 @@ function findMe() {
 
 
 // code from class below
-// document.querySelector('#find-location').addEventListener('click', findMe)
+document.querySelector('#find-location').addEventListener('click', findMe)
