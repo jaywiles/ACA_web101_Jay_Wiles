@@ -12,27 +12,27 @@ body {
     margin: 25px;
 }
 
-[color-block] {
+[data-value] {
     width: 25px;
     float: left;
 }
 
-[color-block="25"] {
+[data-value="25"] {
     height: 25px;
     background-color: red;
 }
 
-[color-block="50"] {
+[data-value="50"] {
     height: 50px;
     background-color: yellow;
 }
 
-[color-block="75"] {
+[data-value="75"] {
     height: 75px;
     background-color: green;
 }
 
-[color-block="100"] {
+[data-value="100"] {
     height: 100px;
     background-color: blue;
 }
