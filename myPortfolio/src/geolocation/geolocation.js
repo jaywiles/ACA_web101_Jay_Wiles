@@ -30,7 +30,5 @@ function findMe() {
     
 }
 
-
-
 // code from class below
 document.querySelector('#find-location').addEventListener('click', findMe)
