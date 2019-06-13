@@ -26,7 +26,6 @@ function findMe() {
     } else {
         status.textContent = "Your browser does not support geolocation."
     }
-    
 }
 
 document.querySelector('#find-location').addEventListener('click', findMe)

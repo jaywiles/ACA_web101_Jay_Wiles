@@ -196,22 +196,25 @@ div > input {
     font-size: 28px;
     margin: 0;
     padding: 5px 5px;
-    background-color: gray;
+    /* background-color: gray; */
     background: rgba(0,0,0,0.6);
     color: white;
 }
 
 .cal-template {
     padding: 5px 5px;
-    background-color: gray;
+    /* background-color: gray; */
     background: rgba(0,0,0,0.6);
     color: white;
     margin: 1%;
 }
 
 .date-template {
-    padding: 5px 15px;
-    background-color: gray;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    /* padding: 5px 15px; */
+    /* background-color: gray; */
     background: rgba(0,0,0,0.6);
     color: white;
     margin: 1%;
