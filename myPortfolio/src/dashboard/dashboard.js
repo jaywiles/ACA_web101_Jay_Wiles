@@ -1,3 +1,4 @@
+// start of geolocation
 function findMe() {
     const displayLoc = document.querySelector('#find-location');
     const status = document.querySelector('#status');
@@ -28,5 +29,5 @@ function findMe() {
     
 }
 
-// code from class below
 document.querySelector('#find-location').addEventListener('click', findMe)
+// end of geolocation
